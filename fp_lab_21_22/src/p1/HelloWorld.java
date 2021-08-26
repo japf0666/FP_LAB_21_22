@@ -24,8 +24,8 @@ public class HelloWorld {
 		// Show the new x's value
 		System.out.println("x = " + x);
 		
-		// Say goodbye!
-		System.out.println("Goodbye my friends!!!");
+		// Say goodbye
+		System.out.println("Good bye ...");		
 
 	}
 
