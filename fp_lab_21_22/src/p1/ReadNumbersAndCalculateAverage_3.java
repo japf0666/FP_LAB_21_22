@@ -1,5 +1,6 @@
 package p1;
 
+import utilidades.ArrayUtilities;
 import utilidades.Teclado;
 
 public class ReadNumbersAndCalculateAverage_3 {
@@ -11,7 +12,7 @@ public class ReadNumbersAndCalculateAverage_3 {
 
 	public static void main(String[] args) {
 		int samples[] = askForSamples(NumberOfSamples);
-		System.out.println(arrayToString(samples));
+		System.out.println(ArrayUtilities.arrayToString(samples));
 		System.out.println("Average = " + calculateAverage(samples));
 		System.out.println();
 		System.out.println("Bye ... Program ReadNumbersAndCalculateAverage_3 is over. ");
@@ -44,23 +45,5 @@ public class ReadNumbersAndCalculateAverage_3 {
 		}
 		return (double)total/samples.length;
 	}
-	
-	/**
-	 * Return an string representation of an array of integers
-	 * @param a input array
-	 * @return string representation of the input array
-	 */
-	public static String arrayToString(int [] a) {
-		
-		String s = "[";
-		for (int i = 0; i < a.length - 1; i++) {
-			s = s + a[i] + "  ";
-		}
-		s = s + a[a.length-1];
-		s = s + "]";
-		return s;
-	}
-	
-	
 
 }
